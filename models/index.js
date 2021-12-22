@@ -1,4 +1,6 @@
 // import models
+const { Model, Datatypes } = require('sequelize')
+const { type } = requrie ('express')
 const Product = require('./Product')
 const Category = require('./Category')
 const Tag = require('./Tag')

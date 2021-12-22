@@ -6,14 +6,14 @@ const { Category, Product } = require('../models')
 router.get('/categories', async function (req, res) {
   // find all categories
   // be sure to include its associated Products
-  const categories = await Category.findAll({include :{Product}})
+  const categories = await Category.findAll({include :[Product]})
   res.json(categories)
 })
 
 router.get('/categories/:id', async function (req, res){
   // find one category by its `id` value
   // be sure to include its associated Products
-  const category = await Category.findOne( where: {id}, { include: { Product } })
+  const category = await Category.findOne( where: {id}, { include: [Product ] })
   res.json(category)
 })
 
@@ -22,6 +22,7 @@ router.post('/categories', async function (req, res) {
   const categories = await Category.create(req.body)
   res.status(200).json(categories)
 })
+//res.sendStatus(200)
 
 router.put('/categories/:id', async function (req, res) {
   // update a category by its `id` value
