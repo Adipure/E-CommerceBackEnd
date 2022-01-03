@@ -36,7 +36,7 @@ Because this application won’t be deployed, a walkthrough video will be attach
 
 
 * A walkthrough video demonstrating the functionality of the application and all of the acceptance criteria being met.
-https://youtu.be/ikDTi4yzZig
+https://youtu.be/n-t-iuaznGU
 
 * The URL of the GitHub repository. Give the repository a unique name and include a readme describing the project.
 https://github.com/Adipure/E-CommerceBackEnd.git
